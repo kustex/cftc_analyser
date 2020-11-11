@@ -1,0 +1,541 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+table {
+border-collapse: collapse;
+border: 2px solid black;
+width: 100%;
+}
+th {
+border: 2px solid black;
+text-align: center;
+}
+td {
+border: 1px solid black;
+text-align: center;
+}
+</style>
+</head>
+<body>
+<h2>METRICS</h2>
+<table>
+<tr>
+<th width="20%">Metric</th>
+<th width="10%">Latest</th>
+<th width="10%">W/W change</th> 
+<th width="10%">3M Ave</th>
+<th width="10%">6M Ave</th>
+<th width="10%">1Y Ave</th>
+<th width="10%">3Y Max</th>
+<th width="10%">3Y Min</th>
+<th width="5%">1Y</th>
+<th width="5%">3Y</th>
+</tr>
+<tr>
+<td><a href="file:///D:\Documents\Beleggen\Data\Style_Sentiment_Factoring\CFTC_non_commercial_net_long_positioning\cftcAnalyser\cftcAnalyser/html/SPX.png" target="_blank">SPX</td>
+<td>29663</td>
+<td>(42654)</td>
+<td>(5354)</td>
+<td>(96805)</td>
+<td>(64774)</td>
+<td>271032</td>
+<td>(333489)</td>
+<td>0.85</td>
+<td>-0.14</td>
+</tr>
+<tr>
+<td><a href="file:///D:\Documents\Beleggen\Data\Style_Sentiment_Factoring\CFTC_non_commercial_net_long_positioning\cftcAnalyser\cftcAnalyser/html/VIX.png" target="_blank">VIX</td>
+<td>(101939)</td>
+<td>(8388)</td>
+<td>(93839)</td>
+<td>(76474)</td>
+<td>(99385)</td>
+<td>92913</td>
+<td>(218362)</td>
+<td>-0.05</td>
+<td>-0.37</td>
+</tr>
+<tr>
+<td><a href="file:///D:\Documents\Beleggen\Data\Style_Sentiment_Factoring\CFTC_non_commercial_net_long_positioning\cftcAnalyser\cftcAnalyser/html/Russel 2000.png" target="_blank">Russel 2000</td>
+<td>29205</td>
+<td>3864</td>
+<td>15665</td>
+<td>10501</td>
+<td>14467</td>
+<td>72749</td>
+<td>(88708)</td>
+<td>0.62</td>
+<td>0.87</td>
+</tr>
+<tr>
+<td><a href="file:///D:\Documents\Beleggen\Data\Style_Sentiment_Factoring\CFTC_non_commercial_net_long_positioning\cftcAnalyser\cftcAnalyser/html/Dow Jones.png" target="_blank">Dow Jones</td>
+<td>600</td>
+<td>1908</td>
+<td>(8291)</td>
+<td>(13064)</td>
+<td>3605</td>
+<td>81019</td>
+<td>(28732)</td>
+<td>-0.15</td>
+<td>-0.93</td>
+</tr>
+<tr>
+<td><a href="file:///D:\Documents\Beleggen\Data\Style_Sentiment_Factoring\CFTC_non_commercial_net_long_positioning\cftcAnalyser\cftcAnalyser/html/Nasdaq.png" target="_blank">Nasdaq</td>
+<td>19512</td>
+<td>93183</td>
+<td>(24032)</td>
+<td>1222</td>
+<td>12004</td>
+<td>47085</td>
+<td>(133005)</td>
+<td>0.22</td>
+<td>0.32</td>
+</tr>
+<tr>
+<td><a href="file:///D:\Documents\Beleggen\Data\Style_Sentiment_Factoring\CFTC_non_commercial_net_long_positioning\cftcAnalyser\cftcAnalyser/html/MSCI Emerging Markets.png" target="_blank">MSCI Emerging Markets</td>
+<td>38211</td>
+<td>(2219)</td>
+<td>0</td>
+<td>53794</td>
+<td>168352</td>
+<td>286674</td>
+<td>38211</td>
+<td bgcolor="#FF4040">-1.57</td>
+<td bgcolor="#FF4040">-2.48</td>
+</tr>
+<tr>
+<td><a href="file:///D:\Documents\Beleggen\Data\Style_Sentiment_Factoring\CFTC_non_commercial_net_long_positioning\cftcAnalyser\cftcAnalyser/html/Nikkel Index.png" target="_blank">Nikkel Index</td>
+<td>4085</td>
+<td>2225</td>
+<td>901</td>
+<td>(1130)</td>
+<td>(4538)</td>
+<td>14214</td>
+<td>(16298)</td>
+<td bgcolor="#40FF40">2.53</td>
+<td>1.13</td>
+</tr>
+<tr>
+<td><a href="file:///D:\Documents\Beleggen\Data\Style_Sentiment_Factoring\CFTC_non_commercial_net_long_positioning\cftcAnalyser\cftcAnalyser/html/10Y UST.png" target="_blank">10Y UST</td>
+<td>104996</td>
+<td>(106)</td>
+<td>90944</td>
+<td>42547</td>
+<td>(49175)</td>
+<td>170468</td>
+<td>(758490)</td>
+<td>1.22</td>
+<td bgcolor="#40FF40">1.57</td>
+</tr>
+<tr>
+<td><a href="file:///D:\Documents\Beleggen\Data\Style_Sentiment_Factoring\CFTC_non_commercial_net_long_positioning\cftcAnalyser\cftcAnalyser/html/2Y UST.png" target="_blank">2Y UST</td>
+<td>(244613)</td>
+<td>(5006)</td>
+<td>(241918)</td>
+<td>(248333)</td>
+<td>(231847)</td>
+<td>67767</td>
+<td>(421551)</td>
+<td>-0.17</td>
+<td>-0.44</td>
+</tr>
+<tr>
+<td><a href="file:///D:\Documents\Beleggen\Data\Style_Sentiment_Factoring\CFTC_non_commercial_net_long_positioning\cftcAnalyser\cftcAnalyser/html/5Y UST.png" target="_blank">5Y UST</td>
+<td>(403083)</td>
+<td>19629</td>
+<td>(192331)</td>
+<td>(164315)</td>
+<td>(194910)</td>
+<td>65383</td>
+<td>(866140)</td>
+<td bgcolor="#FF4040">-1.89</td>
+<td>-0.41</td>
+</tr>
+<tr>
+<td><a href="file:///D:\Documents\Beleggen\Data\Style_Sentiment_Factoring\CFTC_non_commercial_net_long_positioning\cftcAnalyser\cftcAnalyser/html/30D Fed Funds.png" target="_blank">30D Fed Funds</td>
+<td>221840</td>
+<td>66471</td>
+<td>208909</td>
+<td>306955</td>
+<td>313077</td>
+<td>488558</td>
+<td>(222037)</td>
+<td>-1.09</td>
+<td>0.70</td>
+</tr>
+<tr>
+<td><a href="file:///D:\Documents\Beleggen\Data\Style_Sentiment_Factoring\CFTC_non_commercial_net_long_positioning\cftcAnalyser\cftcAnalyser/html/3M Eurodollar.png" target="_blank">3M Eurodollar</td>
+<td>632526</td>
+<td>(79428)</td>
+<td>434605</td>
+<td>131136</td>
+<td>468478</td>
+<td>2134274</td>
+<td>(3110209)</td>
+<td>0.22</td>
+<td>0.88</td>
+</tr>
+<tr>
+<td><a href="file:///D:\Documents\Beleggen\Data\Style_Sentiment_Factoring\CFTC_non_commercial_net_long_positioning\cftcAnalyser\cftcAnalyser/html/UST Bonds.png" target="_blank">UST Bonds</td>
+<td>(223621)</td>
+<td>10527</td>
+<td>(175474)</td>
+<td>(138354)</td>
+<td>(98217)</td>
+<td>122839</td>
+<td>(234148)</td>
+<td bgcolor="#FF4040">-2.43</td>
+<td bgcolor="#FF4040">-2.76</td>
+</tr>
+<tr>
+<td><a href="file:///D:\Documents\Beleggen\Data\Style_Sentiment_Factoring\CFTC_non_commercial_net_long_positioning\cftcAnalyser\cftcAnalyser/html/AUD.png" target="_blank">AUD</td>
+<td>3261</td>
+<td>(5509)</td>
+<td>2745</td>
+<td>(8047)</td>
+<td>(23857)</td>
+<td>44531</td>
+<td>(74181)</td>
+<td>1.34</td>
+<td>1.21</td>
+</tr>
+<tr>
+<td><a href="file:///D:\Documents\Beleggen\Data\Style_Sentiment_Factoring\CFTC_non_commercial_net_long_positioning\cftcAnalyser\cftcAnalyser/html/CAD.png" target="_blank">CAD</td>
+<td>(14469)</td>
+<td>4510</td>
+<td>(22432)</td>
+<td>(23969)</td>
+<td>(6959)</td>
+<td>53332</td>
+<td>(67121)</td>
+<td>-0.31</td>
+<td>-0.16</td>
+</tr>
+<tr>
+<td><a href="file:///D:\Documents\Beleggen\Data\Style_Sentiment_Factoring\CFTC_non_commercial_net_long_positioning\cftcAnalyser\cftcAnalyser/html/CHF.png" target="_blank">CHF</td>
+<td>12346</td>
+<td>(1272)</td>
+<td>13679</td>
+<td>9495</td>
+<td>2806</td>
+<td>17848</td>
+<td>(47216)</td>
+<td>0.96</td>
+<td bgcolor="#40FF40">1.64</td>
+</tr>
+<tr>
+<td><a href="file:///D:\Documents\Beleggen\Data\Style_Sentiment_Factoring\CFTC_non_commercial_net_long_positioning\cftcAnalyser\cftcAnalyser/html/EUR.png" target="_blank">EUR</td>
+<td>166850</td>
+<td>(7855)</td>
+<td>189781</td>
+<td>142440</td>
+<td>51614</td>
+<td>212535</td>
+<td>(123765)</td>
+<td>1.10</td>
+<td bgcolor="#40FF40">1.59</td>
+</tr>
+<tr>
+<td><a href="file:///D:\Documents\Beleggen\Data\Style_Sentiment_Factoring\CFTC_non_commercial_net_long_positioning\cftcAnalyser\cftcAnalyser/html/GBP.png" target="_blank">GBP</td>
+<td>(11107)</td>
+<td>6293</td>
+<td>(4947)</td>
+<td>(11425)</td>
+<td>(3168)</td>
+<td>49216</td>
+<td>(107406)</td>
+<td>-0.43</td>
+<td>0.26</td>
+</tr>
+<tr>
+<td><a href="file:///D:\Documents\Beleggen\Data\Style_Sentiment_Factoring\CFTC_non_commercial_net_long_positioning\cftcAnalyser\cftcAnalyser/html/JPY.png" target="_blank">JPY</td>
+<td>20383</td>
+<td>635</td>
+<td>23593</td>
+<td>23766</td>
+<td>1551</td>
+<td>33088</td>
+<td>(140151)</td>
+<td>0.62</td>
+<td>1.15</td>
+</tr>
+<tr>
+<td><a href="file:///D:\Documents\Beleggen\Data\Style_Sentiment_Factoring\CFTC_non_commercial_net_long_positioning\cftcAnalyser\cftcAnalyser/html/MXN.png" target="_blank">MXN</td>
+<td>23169</td>
+<td>1057</td>
+<td>13191</td>
+<td>11103</td>
+<td>63259</td>
+<td>170379</td>
+<td>(21903)</td>
+<td>-0.59</td>
+<td>-0.87</td>
+</tr>
+<tr>
+<td><a href="file:///D:\Documents\Beleggen\Data\Style_Sentiment_Factoring\CFTC_non_commercial_net_long_positioning\cftcAnalyser\cftcAnalyser/html/NZD.png" target="_blank">NZD</td>
+<td>6490</td>
+<td>1400</td>
+<td>3742</td>
+<td>(1837)</td>
+<td>(8745)</td>
+<td>27603</td>
+<td>(42544)</td>
+<td>1.26</td>
+<td>1.19</td>
+</tr>
+<tr>
+<td><a href="file:///D:\Documents\Beleggen\Data\Style_Sentiment_Factoring\CFTC_non_commercial_net_long_positioning\cftcAnalyser\cftcAnalyser/html/USD.png" target="_blank">USD</td>
+<td>407</td>
+<td>3475</td>
+<td>(6188)</td>
+<td>(1172)</td>
+<td>8631</td>
+<td>43033</td>
+<td>(10666)</td>
+<td>-0.69</td>
+<td>-1.05</td>
+</tr>
+<tr>
+<td><a href="file:///D:\Documents\Beleggen\Data\Style_Sentiment_Factoring\CFTC_non_commercial_net_long_positioning\cftcAnalyser\cftcAnalyser/html/Alominium.png" target="_blank">Alominium</td>
+<td>2456</td>
+<td>854</td>
+<td>1810</td>
+<td>1099</td>
+<td>72</td>
+<td>9441</td>
+<td>(3197)</td>
+<td bgcolor="#40FF40">1.75</td>
+<td>0.78</td>
+</tr>
+<tr>
+<td><a href="file:///D:\Documents\Beleggen\Data\Style_Sentiment_Factoring\CFTC_non_commercial_net_long_positioning\cftcAnalyser\cftcAnalyser/html/Cocoa.png" target="_blank">Cocoa</td>
+<td>26871</td>
+<td>(11786)</td>
+<td>37287</td>
+<td>15586</td>
+<td>31145</td>
+<td>81269</td>
+<td>(31483)</td>
+<td>-0.14</td>
+<td>0.22</td>
+</tr>
+<tr>
+<td><a href="file:///D:\Documents\Beleggen\Data\Style_Sentiment_Factoring\CFTC_non_commercial_net_long_positioning\cftcAnalyser\cftcAnalyser/html/Coffee.png" target="_blank">Coffee</td>
+<td>39082</td>
+<td>(1020)</td>
+<td>44547</td>
+<td>19568</td>
+<td>19078</td>
+<td>60402</td>
+<td>(106651)</td>
+<td>0.88</td>
+<td bgcolor="#40FF40">1.70</td>
+</tr>
+<tr>
+<td><a href="file:///D:\Documents\Beleggen\Data\Style_Sentiment_Factoring\CFTC_non_commercial_net_long_positioning\cftcAnalyser\cftcAnalyser/html/Copper.png" target="_blank">Copper</td>
+<td>59329</td>
+<td>5517</td>
+<td>51839</td>
+<td>29211</td>
+<td>2538</td>
+<td>68119</td>
+<td>(60135)</td>
+<td bgcolor="#40FF40">1.69</td>
+<td bgcolor="#40FF40">1.68</td>
+</tr>
+<tr>
+<td><a href="file:///D:\Documents\Beleggen\Data\Style_Sentiment_Factoring\CFTC_non_commercial_net_long_positioning\cftcAnalyser\cftcAnalyser/html/Corn.png" target="_blank">Corn</td>
+<td>291549</td>
+<td>38645</td>
+<td>99799</td>
+<td>(46606)</td>
+<td>(51479)</td>
+<td>372754</td>
+<td>(270560)</td>
+<td bgcolor="#40FF40">2.84</td>
+<td bgcolor="#40FF40">1.75</td>
+</tr>
+<tr>
+<td><a href="file:///D:\Documents\Beleggen\Data\Style_Sentiment_Factoring\CFTC_non_commercial_net_long_positioning\cftcAnalyser\cftcAnalyser/html/Cotton.png" target="_blank">Cotton</td>
+<td>75524</td>
+<td>7667</td>
+<td>61052</td>
+<td>37650</td>
+<td>23498</td>
+<td>129851</td>
+<td>(37827)</td>
+<td bgcolor="#40FF40">1.98</td>
+<td>0.76</td>
+</tr>
+<tr>
+<td><a href="file:///D:\Documents\Beleggen\Data\Style_Sentiment_Factoring\CFTC_non_commercial_net_long_positioning\cftcAnalyser\cftcAnalyser/html/Crude Oil.png" target="_blank">Crude Oil</td>
+<td>505858</td>
+<td>(79)</td>
+<td>510356</td>
+<td>532851</td>
+<td>504009</td>
+<td>784290</td>
+<td>332714</td>
+<td>0.03</td>
+<td>-0.22</td>
+</tr>
+<tr>
+<td><a href="file:///D:\Documents\Beleggen\Data\Style_Sentiment_Factoring\CFTC_non_commercial_net_long_positioning\cftcAnalyser\cftcAnalyser/html/Gold.png" target="_blank">Gold</td>
+<td>238231</td>
+<td>(12160)</td>
+<td>257499</td>
+<td>264320</td>
+<td>290429</td>
+<td>388803</td>
+<td>(56998)</td>
+<td>-1.33</td>
+<td>0.42</td>
+</tr>
+<tr>
+<td><a href="file:///D:\Documents\Beleggen\Data\Style_Sentiment_Factoring\CFTC_non_commercial_net_long_positioning\cftcAnalyser\cftcAnalyser/html/Lean Hogs.png" target="_blank">Lean Hogs</td>
+<td>54233</td>
+<td>686</td>
+<td>44846</td>
+<td>33453</td>
+<td>32942</td>
+<td>97769</td>
+<td>(11151)</td>
+<td bgcolor="#40FF40">1.98</td>
+<td>0.66</td>
+</tr>
+<tr>
+<td><a href="file:///D:\Documents\Beleggen\Data\Style_Sentiment_Factoring\CFTC_non_commercial_net_long_positioning\cftcAnalyser\cftcAnalyser/html/Live Cattle.png" target="_blank">Live Cattle</td>
+<td>72481</td>
+<td>(4199)</td>
+<td>75086</td>
+<td>56279</td>
+<td>63569</td>
+<td>183134</td>
+<td>19421</td>
+<td>0.31</td>
+<td>-0.20</td>
+</tr>
+<tr>
+<td><a href="file:///D:\Documents\Beleggen\Data\Style_Sentiment_Factoring\CFTC_non_commercial_net_long_positioning\cftcAnalyser\cftcAnalyser/html/Nat Gas.png" target="_blank">Nat Gas</td>
+<td>70135</td>
+<td>1023</td>
+<td>34469</td>
+<td>(9046)</td>
+<td>(97097)</td>
+<td>70135</td>
+<td>(262534)</td>
+<td bgcolor="#40FF40">1.65</td>
+<td bgcolor="#40FF40">2.04</td>
+</tr>
+<tr>
+<td><a href="file:///D:\Documents\Beleggen\Data\Style_Sentiment_Factoring\CFTC_non_commercial_net_long_positioning\cftcAnalyser\cftcAnalyser/html/Orange Juice.png" target="_blank">Orange Juice</td>
+<td>(1371)</td>
+<td>663</td>
+<td>(55)</td>
+<td>927</td>
+<td>(2085)</td>
+<td>5540</td>
+<td>(9416)</td>
+<td>0.20</td>
+<td>0.36</td>
+</tr>
+<tr>
+<td><a href="file:///D:\Documents\Beleggen\Data\Style_Sentiment_Factoring\CFTC_non_commercial_net_long_positioning\cftcAnalyser\cftcAnalyser/html/Palladium.png" target="_blank">Palladium</td>
+<td>3419</td>
+<td>212</td>
+<td>2919</td>
+<td>1971</td>
+<td>4514</td>
+<td>27608</td>
+<td>5</td>
+<td>-0.25</td>
+<td>-1.04</td>
+</tr>
+<tr>
+<td><a href="file:///D:\Documents\Beleggen\Data\Style_Sentiment_Factoring\CFTC_non_commercial_net_long_positioning\cftcAnalyser\cftcAnalyser/html/Platinum.png" target="_blank">Platinum</td>
+<td>8798</td>
+<td>548</td>
+<td>15847</td>
+<td>17318</td>
+<td>31094</td>
+<td>69306</td>
+<td>(11540)</td>
+<td>-1.16</td>
+<td>-0.72</td>
+</tr>
+<tr>
+<td><a href="file:///D:\Documents\Beleggen\Data\Style_Sentiment_Factoring\CFTC_non_commercial_net_long_positioning\cftcAnalyser\cftcAnalyser/html/RBOB Gasoline.png" target="_blank">RBOB Gasoline</td>
+<td>54024</td>
+<td>(2797)</td>
+<td>61912</td>
+<td>58202</td>
+<td>79493</td>
+<td>129000</td>
+<td>42174</td>
+<td>-1.07</td>
+<td bgcolor="#FF4040">-1.64</td>
+</tr>
+<tr>
+<td><a href="file:///D:\Documents\Beleggen\Data\Style_Sentiment_Factoring\CFTC_non_commercial_net_long_positioning\cftcAnalyser\cftcAnalyser/html/Silver.png" target="_blank">Silver</td>
+<td>42847</td>
+<td>(1057)</td>
+<td>38515</td>
+<td>36542</td>
+<td>43846</td>
+<td>80646</td>
+<td>(30158)</td>
+<td>-0.07</td>
+<td>0.57</td>
+</tr>
+<tr>
+<td><a href="file:///D:\Documents\Beleggen\Data\Style_Sentiment_Factoring\CFTC_non_commercial_net_long_positioning\cftcAnalyser\cftcAnalyser/html/Soybeans.png" target="_blank">Soybeans</td>
+<td>254744</td>
+<td>(16191)</td>
+<td>182754</td>
+<td>118845</td>
+<td>56600</td>
+<td>270935</td>
+<td>(148817)</td>
+<td bgcolor="#40FF40">2.27</td>
+<td bgcolor="#40FF40">2.62</td>
+</tr>
+<tr>
+<td><a href="file:///D:\Documents\Beleggen\Data\Style_Sentiment_Factoring\CFTC_non_commercial_net_long_positioning\cftcAnalyser\cftcAnalyser/html/Sugar.png" target="_blank">Sugar</td>
+<td>293278</td>
+<td>22660</td>
+<td>230964</td>
+<td>148354</td>
+<td>96816</td>
+<td>293278</td>
+<td>(205161)</td>
+<td bgcolor="#40FF40">1.77</td>
+<td bgcolor="#40FF40">2.73</td>
+</tr>
+<tr>
+<td><a href="file:///D:\Documents\Beleggen\Data\Style_Sentiment_Factoring\CFTC_non_commercial_net_long_positioning\cftcAnalyser\cftcAnalyser/html/Heating Oil.png" target="_blank">Heating Oil</td>
+<td>5160</td>
+<td>(3454)</td>
+<td>9615</td>
+<td>6550</td>
+<td>(1364)</td>
+<td>67696</td>
+<td>(27674)</td>
+<td>0.57</td>
+<td>-0.24</td>
+</tr>
+<tr>
+<td><a href="file:///D:\Documents\Beleggen\Data\Style_Sentiment_Factoring\CFTC_non_commercial_net_long_positioning\cftcAnalyser\cftcAnalyser/html/Wheat.png" target="_blank">Wheat</td>
+<td>52548</td>
+<td>6116</td>
+<td>27143</td>
+<td>6740</td>
+<td>17962</td>
+<td>63219</td>
+<td>(119350)</td>
+<td>1.48</td>
+<td>1.42</td>
+</tr>
+</table>
+</body>
+</html>
