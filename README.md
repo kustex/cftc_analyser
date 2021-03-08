@@ -5,7 +5,7 @@
 CFTC Analyzer is a tool to get 1 and 3 year z-scores for the major asset classes in the world. It is a indicator to be able to quantify the sentiment on the street. 
 
 | Steps to get it working |
-
+|---|---|
 1. Download the repository
 2. Go to https://www.cftc.gov/MarketReports/CommitmentsofTraders/HistoricalCompressed/index.htm
 3. Go to the header "Futures-and-Options Combined Reports", and download the latest 3 (or more) files.
